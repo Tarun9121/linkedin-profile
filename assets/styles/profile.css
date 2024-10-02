@@ -1,0 +1,219 @@
+/* profile.css */
+/* Image and cover-related classes */
+.cover-pic {
+    background-image: url(../images/coverPic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: clip;
+    height: 144px;
+}
+.details {
+    margin-top: 60px;
+    padding: 20px 20px 0px 0px;
+}
+.analytics-content > div.tweet:hover {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+}
+
+#profile-pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#toggle-f-direction p {
+    margin: 0;
+}
+
+/* elements */
+.card {
+    background-color: #dde7f1;
+    width:fit-content;
+}
+.container {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #6a4c45;
+    box-shadow: #949191;
+}
+.card, .container {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.tweet {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    /* margin: 10px;     */
+}
+.tweet-content > * {
+    margin: 0px;
+    padding: 0px;
+}
+.tweet a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.tweet-img {
+    height: 60px;
+}
+.heading > h3 {
+    margin: 6px auto;
+}
+
+.search-bar {
+    border: 0px solid transparent;
+    outline: 0px solid transparent;
+}
+.search-box {
+    padding: 5px 10px;
+}
+.search-bar, .search-box {
+    background-color: #EDF3F8;
+}
+.icon {
+    width: 44px;
+}
+
+.active {
+    background-color: #0a66c2;
+    color: #fff;
+    border: 3px solid #0a66c2;
+}
+.active:hover {
+    color:#0a66c2;
+}
+
+.nav-items a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f2ee;
+}
+.navbar {
+    border-radius: 5px;      
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #212121;
+    padding: 5px;
+}
+
+.profile-links > div {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #949191;
+}
+.profile-links > div:last-child {
+    border-bottom: 1px solid transparent;
+}
+.profile-links > div:last-child {
+    margin-bottom: 0px;
+}
+
+
+.footer a, .footer p, .footer i {
+    color: #949191;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.show-tabs-flex {
+    display: none;
+}
+
+.show-laptops {
+    display: block;
+}
+.content > * {
+    padding: 0;
+    margin: 0;
+}
+.content {
+    padding: 10px 0;
+}
+.card > h4 {
+    /* padding: 0; */
+    margin: 5px 0px;
+}
+
+@media (max-width: 780px) {
+    .show-tabs-flex {
+        display: flex;
+    }
+    .show-laptops {
+        display: none;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+div.grid {
+justify-content: center;
+gap: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: 804px 300px;
+    }
+    .cover-pic {
+        height: 201px;
+    }
+    #profile-pic {
+        width: 152px;
+        height: 152px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .grid {
+        grid-template-columns: 636px 300px;
+    }
+    #profile-pic {
+        width: 152px;
+        height: 152px;
+    }
+    .cover-pic {
+        height: 159px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+    .grid {
+        grid-template-columns: 396px 300px;
+    }
+    .cover-pic {
+        height: 99px;
+    }
+    .analytics-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 759px) {
+    .grid {
+        grid-template-columns: minmax(0, 568px);
+    }
+    .grid > div:nth-child(2) {
+        display: none;
+    }
+    .analytics-content {
+        flex-direction: column;
+    }
+}
